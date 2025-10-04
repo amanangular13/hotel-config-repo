@@ -7,15 +7,9 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: booking
-          uri: lb://booking-service
+        - id: user-service
+          uri: lb://user-service
           predicates:
-            - Path=/api/booking/**
-          filters:
-            - StripPrefix=1
-        - id: hotel
-          uri: lb://hotel-service
-          predicates:
-            - Path=/api/hotel/**
+            - Path=/api/users/**
           filters:
             - StripPrefix=1
