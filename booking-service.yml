@@ -30,9 +30,3 @@ resilience4j:
       bookingRetry:
         maxAttempts: 3
         waitDuration: 500ms
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: resilience4j*
