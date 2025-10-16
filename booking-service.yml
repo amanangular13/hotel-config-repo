@@ -25,6 +25,11 @@ resilience4j:
     instances:
       bookingBreaker:
         baseConfig: default
+  retry:
+    instances:
+      bookingRetry:
+        maxAttempts: 3
+        waitDuration: 500ms
 
 management:
   endpoints:
