@@ -25,3 +25,9 @@ resilience4j:
     instances:
       bookingBreaker:
         baseConfig: default
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: resilience4j*
