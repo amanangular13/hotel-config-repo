@@ -1,10 +1,10 @@
 spring:
   datasource:
-    username: root
-    password: 12345678
+    username: ${MYSQLUSER:root}
+    password: ${MYSQLPASSWORD:12345678}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     
 management:
