@@ -16,6 +16,10 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_SERVER}
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka/}
   instance:
     prefer-ip-address: true
+
+logging:
+  level:
+    org.springframework.web: DEBUG
