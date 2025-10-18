@@ -16,3 +16,9 @@ spring:
                 allowedOrigins: "*"
                 allowedMethods: "*"
                 allowedHeaders: "*"
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.boot.autoconfigure.web: DEBUG
+    com.netflix.discovery: DEBUG
